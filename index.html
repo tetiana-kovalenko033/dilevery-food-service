@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food delivery service</title>
+    <link rel="stylesheet" href="
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./index.html"
+          ><img src="./images/food-logo.svg" alt="logotype"
+        /></a>
+        <ul>
+          <li><a href=""></a>Home</li>
+          <li><a href=""></a>About</li>
+          <li><a href=""></a>Service</li>
+          <li><a href=""></a>Menu</li>
+          <li><a href=""></a>Contact</li>
+        </ul>
+        <button type="button">Order now</button>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section">
+        <h1>Enjoy Your Favorite Food From Anywhere</h1>
+        <p>
+          With just a few clicks, you can have your favorite meals delivered
+          straight to your doorstep, no matter where you are. Order now and
+          enjoy a hassle-free and delicious meal from the comfort of your own
+          home.
+        </p>
+        <img
+          src="./images/food-plate.png"
+          alt="food plate"
+          width="528"
+          height="528"
+        />
+        <button type="button" class="main-button">Order now</button>
+      </section>
+      <section class="oferings">
+        <h2>What's Special About Our Offerings</h2>
+        <p>
+          With our platform, you can browse through a diverse selection of
+          cuisines and local restaurants, and choose from a variety of dishes
+          that cater to your specific taste buds.
+        </p>
+      </section>
+    </main>
+    <footer></footer>
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="modal-close-btn" type="button">
+          <svg class="modal-close-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Order Form</p>
+        <form class="modal-form">
+          <div class="modal-form-field">
+            <label class="modal-label" for="user-name">Name</label>
+            <input
+              class="modal-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Your name"
+              pattern="[a-z]{3,25}"
+              required
+            />
+          </div>
+          <div class="modal-form-field">
+            <label class="modal-label" for="user-tel">Phone number</label>
+            <input
+              class="modal-input"
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              placeholder="+38(0_ _) _ _ _   _ _   _ _"
+              required
+            />
+          </div>
+          <div class="modal-form-field">
+            <label class="modal-label" for="user-email">E-mail</label>
+            <input
+              class="modal-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="example@gmail.com"
+              required
+            />
+          </div>
+          <button class="modal-form-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
